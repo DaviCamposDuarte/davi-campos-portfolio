@@ -36,3 +36,54 @@
 @media(prefers-reduced-motion:reduce){.portrait-frame{transform:none;transition:none}.portrait-frame:hover{box-shadow:0 24px 55px rgba(32,33,30,.14)}}
 .social-links a{transition:font-size .18s ease,color .18s ease}.social-links a:hover,.social-links a:focus-visible{font-size:11px;color:#d9f3ae}
 @media(prefers-reduced-motion:reduce){.social-links a{transition:none}}
+
+/* Ajustes de leitura e acabamento para telas pequenas. */
+.button span,.text-link span,.nav-contact span,.project-link,.site-footer>a:last-of-type{font-family:Arial,sans-serif;font-variant-emoji:text}
+.hero-location>span,.about-note>span,.contact-star,.preview-spark{font-variant-emoji:text}
+.social-links a{display:inline-flex;align-items:center;gap:8px;padding:12px 15px;border:1px solid #66685e;border-radius:3px;background:#2c2e27;color:#f5f4ef;font-size:11px;font-weight:500;transition:background-color .18s ease,border-color .18s ease,transform .18s ease}
+.social-links a:hover,.social-links a:focus-visible{font-size:11px;background:#373a30;border-color:#a9d56a;color:#e4f7c7;transform:translateY(-2px)}
+.social-links span{font:14px/1 Arial,sans-serif;font-variant-emoji:text}
+@media(max-width:800px){
+  .about-copy{font-size:15px}
+  .project-info h3{font-size:20px}
+  .project-info>p{font-size:13px}
+  .project-tags{flex-wrap:wrap}
+  .project-tags span{font-size:9px}
+  .skill-group-label{font-size:9px}
+  .skill-tags span{font-size:11px}
+  .skills-note{font-size:12px}
+}
+@media(max-width:560px){
+  .eyebrow{font-size:9px;letter-spacing:1px}
+  .about-copy{font-size:15px;line-height:1.85}
+  .about-copy .text-link{font-size:12px}
+  .project-type{font-size:9px;letter-spacing:.8px}
+  .project-info h3{font-size:20px}
+  .project-info>p{font-size:13px;line-height:1.75}
+  .project-tags span{font-size:10px;padding:8px 10px}
+  .project-tags{flex-wrap:wrap}
+  .skill-group{grid-template-columns:1fr;gap:8px;padding:15px 0}
+  .skill-group-label{font-size:9px;letter-spacing:1px;padding-top:0}
+  .skill-tags{gap:7px}
+  .skill-tags span{font-size:11px;padding:9px 11px}
+  .skills-note{font-size:12px;line-height:1.6}
+  .social-links{gap:10px;margin-top:30px}
+  .social-links a{justify-content:center;flex:1;padding:13px 12px;font-size:12px}
+  .social-links a:hover,.social-links a:focus-visible{font-size:12px}
+  .site-footer{grid-template-columns:1fr auto;grid-template-areas:"brand top" "note note" "copy copy";align-items:center;gap:12px 16px;padding-top:22px;padding-bottom:22px}
+  .site-footer>.wordmark{grid-area:brand;justify-self:start}
+  .site-footer>p{grid-area:note;grid-column:auto;margin:0;font-size:11px;line-height:1.5}
+  .site-footer>a:last-of-type{grid-area:top;justify-self:end;font-size:8px;white-space:nowrap}
+  .site-footer>small{grid-area:copy;justify-self:start;font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.social-links a{transition:none}.social-links a:hover,.social-links a:focus-visible{transform:none}}
+
+/* Texto corrido com mais contraste e tamanho confortável para leitura. */
+.about-copy{font-size:15px;line-height:1.8;color:#686a63}
+.project-info p{font-size:14px;line-height:1.8;color:#5f615a}
+@media(max-width:560px){
+  .about-copy{font-size:15px;line-height:1.85}
+  .project-info p{font-size:13px;line-height:1.75}
+}
+.whatsapp-icon{width:15px;height:15px;margin-left:7px;vertical-align:-3px;fill:none;stroke:#79a93e;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.whatsapp-link:hover .whatsapp-icon,.whatsapp-link:focus-visible .whatsapp-icon{stroke:#4f7f25}
